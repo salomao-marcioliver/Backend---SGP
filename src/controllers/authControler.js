@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 const JWTSecret = 'senha_secreta'
 
 export const auth = (req, res, next) => {
-  const authToken = req.headers.authorization
+  const authToken = req.headers['authorization']
   if (authToken != undefined) {
     const bearer = authToken.split(' ')
     let token = bearer[1]
@@ -12,7 +12,7 @@ export const auth = (req, res, next) => {
         res.status(401).json({ err: "Token inválido!" })
       } else {
         req.token = token;
-        req.loggedUser = { id: data.id }
+        req.loggedUser = { id: data.id, email: data.email }
         next();
       }
     })
@@ -25,8 +25,8 @@ const DB = {
   users: [
     {
       id: 1,
-      email: "admin@gmail.com",
-      password: "admin123"
+      email: "a@gmail.com",
+      password: "123"
     }
   ]
 }

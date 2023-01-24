@@ -1,7 +1,7 @@
 import conn from "../database/db.js"
 
 export const getProject = async (_, res) => {
-    const q = "select pc.codprojeto, pc.titulo, to_char( pc.data_inicio, 'DD/MM/YYYY') as data_inicio, to_char( pc.data_termino, 'DD/MM/YYYY') as data_termino , pc.nome_coord, pc.instituto_coord from projeto_coordenador pc;"
+    const q = "select pc.codprojeto, pc.titulo, to_char( pc.data_inicio, 'DD/MM/YYYY') as data_inicio, to_char( pc.data_termino, 'DD/MM/YYYY') as data_termino , pc.codcoord, pc.nome_coord, pc.instituto_coord from projeto_coordenador pc;"
 
     conn.query(q, (err, data) => {
         if (err) {
