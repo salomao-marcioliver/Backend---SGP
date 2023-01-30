@@ -1,7 +1,7 @@
 import conn from "../database/db.js";
 
 export const getStudent = async(_, res) => {
-    const q = "select b.num_matricula, b.nome, b.curso, b.instituto, pc.titulo, pc.nome_coord from bolsista b join projeto_coordenador pc on b.codprojeto = pc.codprojeto;"
+    const q = "select b.num_matricula, b.nome, b.curso, to_char( b.data_nascimento, 'DD/MM/YYYY') as data_nascimento, b.instituto, b.codprojeto, pc.titulo, pc.nome_coord from bolsista b join projeto_coordenador pc on b.codprojeto = pc.codprojeto;"
 
     conn.query(q, (err, data) => {
         if(err){
