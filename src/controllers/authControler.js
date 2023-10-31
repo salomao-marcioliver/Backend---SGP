@@ -25,7 +25,7 @@ const DB = {
   users: [
     {
       id: 1,
-      email: "a@gmail.com",
+      email: "admin@gmail.com",
       password: "123"
     }
   ]
