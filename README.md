@@ -13,8 +13,8 @@ Para configurar e executar o projeto, siga estas etapas:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/salomao-marcioliver/Backend---Final-Project-DB.git
+   cd Backend---Final-Project-DB
 
 2. Instale as dependências do projeto usando npm:
 
