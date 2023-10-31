@@ -16,7 +16,7 @@ Para configurar e executar o projeto, siga estas etapas:
    git clone https://github.com/seu-usuario/seu-projeto.git
    cd seu-projeto
 
-Instale as dependências do projeto usando npm:
+2. Instale as dependências do projeto usando npm:
 
    ```bash
    npm install
@@ -34,9 +34,9 @@ O servidor estará acessível em http://localhost:3000 por padrão. Você pode a
 O projeto define as seguintes rotas:
 
 /projetos: CRUD para gerenciar projetos.
+
 /bolsistas: CRUD para gerenciar bolsistas.
 
 
 
-
-Certifique-se de explorar as rotas e usar um cliente REST (como o Postman) para testar as funcionalidades.
+##### Certifique-se de explorar as rotas e usar um cliente REST (como o Postman) para testar as funcionalidades.
