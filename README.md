@@ -31,7 +31,8 @@ Para iniciar o servidor, execute o seguinte comando:
 O servidor estará acessível em http://localhost:3000 por padrão. Você pode alterar a porta no arquivo de configuração, se necessário.
 
 ## Rotas
-![](/api/docs/documention.png)
+
+<img src="docs/documention.png" />
 
 
 
