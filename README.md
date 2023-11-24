@@ -22,7 +22,7 @@ Para configurar e executar o projeto, siga estas etapas:
    npm install
    ```
 
-3. Execute o seguinte script SQL em Gerenciador de Banco de dados (pgAdmin, HeidiSQL, DBeaver...):
+3. Execute o seguinte script SQL em um Gerenciador de Banco de dados (pgAdmin, HeidiSQL, DBeaver...):
     ```bash
     create table bolsista (
       num_matricula bigint primary key not null,
