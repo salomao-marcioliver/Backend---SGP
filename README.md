@@ -1,6 +1,6 @@
 # Sistema de Gestão de Projetos
 
-O Sistema de Gestão de Projetos é uma aplicação de backend desenvolvida em Node.js que oferece um CRUD para projetos, bolsistas e coordenadores, além de gerenciar suas relações.
+O Sistema de Gestão de Projetos (SGP) é uma aplicação de backend desenvolvida em Node.js que oferece um CRUD para projetos, bolsistas e coordenadores, além de gerenciar suas relações. O Frontend do Sistema de Gestão de Projetos (SGP) está localizado neste [link](https://github.com/salomao-marcioliver/Frontend---Final-Project-DB).
 
 ## Pré-requisitos
 
@@ -31,11 +31,7 @@ Para iniciar o servidor, execute o seguinte comando:
 O servidor estará acessível em http://localhost:3000 por padrão. Você pode alterar a porta no arquivo de configuração, se necessário.
 
 ## Rotas
-O projeto define as seguintes rotas:
-
-/projetos: CRUD para gerenciar projetos.
-
-/bolsistas: CRUD para gerenciar bolsistas.
+![](/api/docs/documention.png)
 
 
 
